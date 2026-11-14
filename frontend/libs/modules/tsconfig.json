@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "paths": {
+      "@acadly/modules/*": ["libs/modules/src/*"],
+      "@acadly/infrastructure/*": ["libs/infrastructure/src/*"],
+      "@acadly/assets/*": ["libs/assets/src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

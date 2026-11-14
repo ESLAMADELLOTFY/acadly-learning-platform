@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@source "../../../../libs/assets/src";
+@source "../../../../libs/infrastructure/src";
+@source "../../../../libs/modules/src";
+@import "../../../../tailwind.css";
+
+@theme inline {
+  --font-sans: var(--font-open-sans), "Open Sans", sans-serif;
+  --font-inter: var(--font-inter-face), "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #f7f8f6;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: #202a24;
+  background: #f7f8f6;
+  font-family: var(--font-open-sans), "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #194533;
+  background: #dce9df;
+}
+
+:focus-visible {
+  outline: 3px solid rgb(69 107 85 / 45%);
+  outline-offset: 2px;
+}

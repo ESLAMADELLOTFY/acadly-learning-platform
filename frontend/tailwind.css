@@ -1,45 +1,36 @@
 @theme {
-  /* Primary — Solara Green */
-  --color-primary: #1C4532;
-  --color-primary-light: #214936;
-  --color-primary-dark: #153626;
+  --color-primary: #235b45;
+  --color-primary-light: #2f7459;
+  --color-primary-dark: #194533;
+  --color-secondary: #668c78;
+  --color-secondary-light: #dce9df;
+  --color-secondary-dark: #456b55;
 
-  /* Secondary */
-  --color-secondary: #678578;
-  --color-secondary-light: #9DB2A9;
-  --color-secondary-dark: #456758;
+  --color-background: #f7f8f6;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f0f3ef;
+  --color-foreground: #202a24;
+  --color-muted: #727d75;
+  --color-muted-foreground: #66736b;
+  --color-label: #536057;
 
-  /* Backgrounds */
-  --color-background: #FFFFFF;
-  --color-surface: #F7FAFC;
-  --color-surface-hover: #EEF3F1;
+  --color-border: #e2e8e2;
+  --color-input: #fbfcfb;
+  --color-ring: #91b6a0;
+  --color-checkbox: #cbd7cd;
 
-  /* Text */
-  --color-foreground: #171923;
-  --color-muted: #71839F;
-  --color-muted-foreground: #64748B;
-  --color-label: #67728A;
+  --color-success: #27845a;
+  --color-warning: #b7791f;
+  --color-error: #c74646;
+  --color-info: #3577a8;
 
-  /* Borders & Inputs */
-  --color-border: #D2DDE8;
-  --color-input: #F7FAFC;
-  --color-ring: #CFD9E0;
-  --color-checkbox:#e0d5cf;
+  --font-sans: var(--font-open-sans), "Open Sans", sans-serif;
+  --font-inter: var(--font-inter-face), "Inter", sans-serif;
 
-  /* Feedback */
-  --color-success: #27845A;
-  --color-warning: #E8A23A;
-  --color-error: #D64545;
-  --color-info: #3182CE;
-
-  /* Typography */
-  --font-sans: "Open Sans", sans-serif;
-  --font-inter: "Inter", sans-serif;
-
-  /* Border Radius */
   --radius-sm: 0.375rem;
   --radius-md: 0.625rem;
   --radius-lg: 0.875rem;
   --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
   --radius-full: 9999px;
 }

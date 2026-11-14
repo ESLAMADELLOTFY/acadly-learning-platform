@@ -1,12 +1,23 @@
 {
-  "name": "frontend",
+  "name": "acadly-frontend",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "turbo run dev --filter=@acadly/admin-portal",
+    "dev:admin": "turbo run dev --filter=@acadly/admin-portal",
+    "dev:student": "turbo run dev --filter=@acadly/student-portal",
+    "build": "turbo run build",
+    "build:admin": "turbo run build --filter=@acadly/admin-portal",
+    "build:student": "turbo run build --filter=@acadly/student-portal",
+    "start": "turbo run start --filter=@acadly/admin-portal",
+    "start:student": "turbo run start --filter=@acadly/student-portal",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.0",
@@ -29,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "turbo": "^2.0.0"
   }
 }

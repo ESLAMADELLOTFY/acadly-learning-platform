@@ -1,0 +1,16 @@
+{
+  "name": "@acadly/assets",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./components/*": "./src/components/*"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit --project tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@acadly/modules",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./admin/*": "./src/admin/*",
+    "./user/*": "./src/user/*",
+    "./shared/*": "./src/shared/*"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit --project tsconfig.json"
+  },
+  "dependencies": {
+    "@acadly/assets": "workspace:*",
+    "@acadly/infrastructure": "workspace:*",
+    "@hookform/resolvers": "^7.0.0",
+    "axios": "^1.21.0",
+    "react-hook-form": "^7.91.0",
+    "zod": "^4.6.7"
+  },
+  "peerDependencies": {
+    "next": "^16.4.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

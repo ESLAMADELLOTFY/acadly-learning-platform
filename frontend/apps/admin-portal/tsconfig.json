@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "paths": {
+      "@/*": ["apps/admin-portal/src/*"],
+      "@acadly/assets/*": ["libs/assets/src/*"],
+      "@acadly/infrastructure/*": ["libs/infrastructure/src/*"],
+      "@acadly/modules/*": ["libs/modules/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../libs/modules/src/**/*.ts",
+    "../../libs/modules/src/**/*.tsx",
+    "../../libs/infrastructure/src/**/*.ts",
+    "../../libs/infrastructure/src/**/*.tsx",
+    "../../libs/assets/src/**/*.ts",
+    "../../libs/assets/src/**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
