@@ -1,6 +1,3 @@
-Here’s a ready-to-paste root `README.md`. Update the screenshots section later if you add images.
-
-````markdown
 # Acadly Learning Platform
 
 Acadly is a learning and assessment platform with separate portals for administrators and students. It uses Next.js for the frontends and NestJS for the APIs.
